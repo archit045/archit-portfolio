@@ -11,6 +11,7 @@ import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
 import ScrollProgress from "./components/ScrollProgress";
 import CursorGlow from "./components/CursorGlow";
+import Education from "./sections/Education";
 
 const App = () => {
 
@@ -27,6 +28,7 @@ const App = () => {
       <TechStack />
       <Projects />
       <Experience />
+      <Education/>
       <Contact />
 
       <Footer />

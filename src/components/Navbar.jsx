@@ -6,6 +6,7 @@ const navLinks = [
   { name: "Skills", id: "skills" },
   { name: "Projects", id: "projects" },
   { name: "Experience", id: "experience" },
+  { name: "Education", id: "education" },
   { name: "Contact", id: "contact" },
 ];
 
@@ -16,26 +17,31 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 40);
+  setScrolled(window.scrollY > 40);
 
-      const sections = navLinks.map((link) =>
-        document.getElementById(link.id)
-      );
+  if (window.scrollY < 200) {
+    setActive("");
+    return;
+  }
 
-      sections.forEach((section) => {
-        if (section) {
-          const top = section.offsetTop - 120;
-          const height = section.offsetHeight;
+  const sections = navLinks.map((link) =>
+    document.getElementById(link.id)
+  );
 
-          if (
-            window.scrollY >= top &&
-            window.scrollY < top + height
-          ) {
-            setActive(section.id);
-          }
-        }
-      });
-    };
+  sections.forEach((section) => {
+    if (section) {
+      const top = section.offsetTop - 120;
+      const height = section.offsetHeight;
+
+      if (
+        window.scrollY >= top &&
+        window.scrollY < top + height
+      ) {
+        setActive(section.id);
+      }
+    }
+  });
+};
 
     window.addEventListener("scroll", handleScroll);
 
@@ -71,7 +77,7 @@ const Navbar = () => {
         >
           <h1 className="text-2xl font-bold tracking-wide">
             Archit
-            <span className="text-cyan-400">.</span>
+            <span className="text-cyan-400">Portfolio</span>
           </h1>
         </div>
 

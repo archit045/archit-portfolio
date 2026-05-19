@@ -5,7 +5,7 @@ const Footer = () => {
 
         <h2 className="text-xl font-semibold">
           Archit
-          <span className="text-cyan-400">.</span>
+          <span className="text-cyan-400">Portfolio</span>
         </h2>
 
         <p className="text-gray-500 text-sm text-center">
@@ -13,7 +13,7 @@ const Footer = () => {
           Framer Motion, GSAP & React Three Fiber.
         </p>
 
-        
+
 
       </div>
     </footer>
