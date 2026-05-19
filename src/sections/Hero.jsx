@@ -55,7 +55,7 @@ const Hero = () => {
                     </h1>
 
                     <p className="hero-text text-gray-400 mt-8 text-base sm:text-lg leading-relaxed max-w-2xl">
-                        
+
                         React Frontend Developer specializing in scalable web
                         applications, reusable component architecture, API
                         integration, and modern frontend development.
@@ -97,10 +97,12 @@ const Hero = () => {
 
                     <div className="w-[280px] sm:w-[340px] h-[280px] sm:h-[340px] rounded-[40px] border border-cyan-400/20 bg-gradient-to-br from-cyan-400/10 to-blue-500/10 backdrop-blur-xl flex items-center justify-center">
 
-                       <div className=" w-[220px] sm:w-[280px]  h-[220px] sm:h-[280px] rounded-[30px] overflow-hidden border border-white/10">
+                        <div className="w-[220px] sm:w-[280px] h-[220px] sm:h-[280px] rounded-[30px] overflow-hidden border border-white/10">
                             <img
                                 src="/HeroSectionImage.jpg"
                                 alt="Archit"
+                                loading="lazy"
+                                decoding="async"
                                 className="w-full h-full object-cover object-top"
                             />
                         </div>
