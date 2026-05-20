@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import ScrollProgress from "./components/ScrollProgress";
 import CursorGlow from "./components/CursorGlow";
 import Education from "./sections/Education";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
 
@@ -28,10 +29,12 @@ const App = () => {
       <TechStack />
       <Projects />
       <Experience />
-      <Education/>
+      <Education />
       <Contact />
+      <ScrollToTop />
 
       <Footer />
+
     </main>
   );
 };

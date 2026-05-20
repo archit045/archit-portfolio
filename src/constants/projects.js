@@ -1,18 +1,6 @@
 export const projects = [
 
-  {
-    title: "Retail Module",
-    description:
-      "Built scalable digital storefronts with QR-based order access, seller dashboards, product management, and real-time order tracking systems.",
-
-    tech: [
-      "React.js",
-      "REST APIs",
-      "Tailwind CSS",
-      "Bootstrap",
-    ],
-  },
-
+  
   {
     title: "Marketing Module",
     description:
@@ -24,23 +12,35 @@ export const projects = [
       "REST APIs",
       "Tailwind CSS",
     ],
+    live: "https://geecomindia.in/user/adaptive/table/GMIFR/173/0/10/0/0/2",
+    
   },
-
   {
-    title: "Demand Module",
+    title: "Retail Module",
     description:
-      "Built an interactive platform enabling buyers and sellers to manage demands, requests, and communication through dynamic React components.",
+      "Built scalable digital storefronts with QR-based order access, seller dashboards, product management, and real-time order tracking systems.",
 
     tech: [
       "React.js",
-      "Bootstrap",
       "REST APIs",
-      "Responsive Design",
+      "Tailwind CSS",
+      "Bootstrap",
     ],
-
-    image:
-      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
+     live: "https://geecomindia.in/user/adaptive/table/RMELSGI/178/0/21/0/0/0",
   },
+  {
+  title: "Agri Input Module",
+  description:
+    "Built responsive and user-friendly interfaces for seller management, product listings, inventory handling, and digital selling workflows, ensuring seamless user experience and optimized component architecture.",
+
+  tech: [
+    "React.js",
+    "Bootstrap",
+    "REST APIs",
+    "Responsive Design",
+  ],
+  live: "https://geecomindia.in/user/adaptive/table/GAIMS/179/0/19/0/0/2",
+},
    {
     title: "Lassi Day Website",
     description:

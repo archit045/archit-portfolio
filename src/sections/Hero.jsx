@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
+import {
+    Phone,
+    Mail,
+    Link2
+} from "lucide-react";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -82,6 +87,36 @@ const Hero = () => {
                             className="border border-white/10 px-7 py-3 rounded-full hover:bg-white/5 transition cursor-pointer inline-flex items-center"
                         >
                             Download Resume
+                        </a>
+
+                    </div>
+
+                    <div className="hero-text mt-10 flex flex-wrap items-center gap-6 text-sm sm:text-base">
+
+                        <a
+                            href="tel:+919893055240"
+                            className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition"
+                        >
+                            <Phone size={18} />
+                            +91 9893055240
+                        </a>
+
+                        <a
+                            href="mailto:architthakur90@gmail.com"
+                            className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition"
+                        >
+                            <Mail size={18} />
+                            architthakur90@gmail.com
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/archit-thakur-7b2195280/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition"
+                        >
+                            <Link2 size={18} />
+                            LinkedIn
                         </a>
 
                     </div>

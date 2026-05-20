@@ -31,7 +31,7 @@ const Skills = () => {
           title="Skills & Tools"
         />
 
-        <div className="flex flex-wrap gap-5">
+        <div className="flex flex-wrap justify-center sm:justify-start gap-3 sm:gap-5 mt-14">
 
           {skills.map((skill, index) => (
             <motion.div
@@ -43,7 +43,7 @@ const Skills = () => {
                 delay: index * 0.05,
               }}
               viewport={{ once: true }}
-              className="px-6 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md hover:border-cyan-400 transition"
+              className="px-4 sm:px-6 py-3 sm:py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md hover:border-cyan-400 transition text-sm sm:text-base text-center"
             >
               {skill}
             </motion.div>
