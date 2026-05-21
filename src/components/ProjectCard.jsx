@@ -40,15 +40,16 @@ const ProjectCard = ({ project, index }) => {
       </div>
 
       <div className="flex items-center gap-5 mt-10">
-        <a
-          href={project.live}
-          target="_blank"
-          rel="noreferrer"
-          className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition"
-        >
-          <ArrowUpRight size={18} />
-          Live Project
-        </a>
+         <a
+        href={project.live}
+        target="_blank"
+        rel="noreferrer"
+        className=" flex items-center gap-2 px-5 py-3 rounded-full bg-cyan-400 text-black font-medium hover:scale-105 transition"
+      >
+        <ArrowUpRight size={18} />
+        Live Demo
+      </a>
+
 
       </div>
     </motion.div>

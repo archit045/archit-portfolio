@@ -1,17 +1,13 @@
 import { useEffect, useState } from "react";
-import { ChevronUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ChevronUp } from "lucide-react";
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 400) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
+      setVisible(window.scrollY > 400);
     };
 
     window.addEventListener("scroll", toggleVisibility);
@@ -34,14 +30,40 @@ const ScrollToTop = () => {
     <AnimatePresence>
       {visible && (
         <motion.button
-          initial={{ opacity: 0, scale: 0.5, y: 50 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.5, y: 50 }}
-          transition={{ duration: 0.3 }}
+          initial={{
+            opacity: 0,
+            y: 40,
+          }}
+          animate={{
+            opacity: 1,
+            y: 0,
+          }}
+          exit={{
+            opacity: 0,
+            y: 40,
+          }}
+          transition={{
+            duration: 0.3,
+          }}
+          whileHover={{
+            scale: 1.08,
+          }}
+          whileTap={{
+            scale: 0.95,
+          }}
           onClick={scrollToTop}
-          className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full bg-cyan-400 text-black shadow-lg flex items-center justify-center hover:scale-110 transition cursor-pointer"
+          className="
+            fixed bottom-6 right-6 z-50
+            w-12 h-12
+            rounded-full
+            bg-cyan-400
+            text-black
+            flex items-center justify-center
+            shadow-lg shadow-cyan-400/20
+            cursor-pointer
+          "
         >
-          <ChevronUp size={28} />
+          <ChevronUp size={22} />
         </motion.button>
       )}
     </AnimatePresence>

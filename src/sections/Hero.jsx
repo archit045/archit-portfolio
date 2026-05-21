@@ -54,6 +54,16 @@ const Hero = () => {
                         React Frontend Developer
                     </p>
 
+                    <div className="hero-text inline-flex items-center gap-3 px-4 py-2 rounded-full border border-green-400/20 bg-green-400/10 mb-6">
+
+                        <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse" />
+
+                        <span className="text-sm text-green-300">
+                            Available for opportunities
+                        </span>
+
+                    </div>
+
                     <h1 className="hero-text text-3xl sm:text-5xl md:text-6xl font-bold leading-tight">
                         Building <span className="text-cyan-400">scalable</span>,
                         modern & production-ready frontend applications.
@@ -108,6 +118,8 @@ const Hero = () => {
                             <Mail size={18} />
                             architthakur90@gmail.com
                         </a>
+
+
 
                         <a
                             href="https://www.linkedin.com/in/archit-thakur-7b2195280/"

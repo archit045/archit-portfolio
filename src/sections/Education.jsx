@@ -18,6 +18,14 @@ const educationData = [
     duration: "2021 - 2022",
     percentage: "74%",
   },
+
+  //  {
+  //   icon: <School size={34} />,
+  //   degree: "High S86chool Education",
+  //   institute: "ST Paul School, Jawar",
+  //   duration: "2019 - 2020",
+  //   percentage: "74%",
+  // },
 ];
 
 const Education = () => {
