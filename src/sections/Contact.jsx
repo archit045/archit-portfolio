@@ -1,5 +1,10 @@
 import { motion } from "framer-motion";
 import SectionTitle from "../components/SectionTitle";
+import { FaLinkedin } from "react-icons/fa";
+import {
+  Mail,
+  Phone
+} from "lucide-react";
 
 const Contact = () => {
     return (
@@ -39,7 +44,8 @@ const Contact = () => {
 
                             <div className="mt-10 space-y-5">
                                 <div>
-                                    <p className="text-gray-500 text-sm">
+                                    <p className="text-gray-500 text-sm flex items-center gap-2 transition">
+                                        <Mail size={18}/>
                                         EMAIL
                                     </p>
                                     <a
@@ -52,7 +58,8 @@ const Contact = () => {
                                 </div>
 
                                 <div>
-                                    <p className="text-gray-500 text-sm">
+                                    <p className="text-gray-500 text-sm flex items-center gap-2 transition">
+                                         <FaLinkedin size={18} />
                                         LINKEDIN
                                     </p>
 
@@ -68,10 +75,10 @@ const Contact = () => {
 
                                 <div>
                                     <div>
-                                        <p className="text-gray-500 text-sm">
+                                        <p className="text-gray-500 text-sm flex items-center gap-2 transitionc">
+                                            <Phone size={18}/>
                                             Mobile Number
                                         </p>
-
                                         <a
                                             href="tel:+919893055240"
                                             className="text-lg hover:text-cyan-400 transition"

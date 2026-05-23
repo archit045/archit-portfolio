@@ -1,8 +1,8 @@
 import {
   Mail,
-  Phone,
-  Link2
+  Phone
 } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -43,7 +43,7 @@ const Footer = () => {
             rel="noreferrer"
             className="w-11 h-11 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:border-cyan-400 hover:text-cyan-400 transition"
           >
-         <Link2 size={18} />
+          <FaLinkedin size={18} />
           </a>
 
           

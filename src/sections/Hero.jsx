@@ -3,8 +3,8 @@ import { useEffect, useRef } from "react";
 import {
     Phone,
     Mail,
-    Link2
 } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -127,7 +127,7 @@ const Hero = () => {
                             rel="noreferrer"
                             className="flex items-center gap-2 text-gray-300 hover:text-cyan-400 transition"
                         >
-                            <Link2 size={18} />
+                            <FaLinkedin size={18} />
                             LinkedIn
                         </a>
 
